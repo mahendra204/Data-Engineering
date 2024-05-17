@@ -18,3 +18,6 @@ SQL Use Case — Data Engineer Interview: https://blog.stackademic.com/sql-case-
 SQL Interview Questions for Data Engineer Interview: https://blog.stackademic.com/sql-interview-questions-for-data-analyst-or-data-engineer-interview-5f26fb6afc06
 
 Support me with a coffee @==>: https://ko-fi.com/kamireddymahendra
+
+
+# Kindly give Star if you like this repository to encourage me to boost my energy to contribute more to the community. 
