@@ -1,6 +1,0 @@
-dept_id,dept_name
-201,Sales
-202,Marketing
-203,Finance
-204,Human Resources
-105,IT
