@@ -1,0 +1,11 @@
+emp_id,name,age,salary,department,mgr_id,location
+101,Ravi,29,75000,IT,201,Mumbai
+102,Priya,35,90000,HR,202,Delhi
+103,Patel,42,120000,Finance,203,Bangalore
+104,Sneha,27,68000,Marketing,201,Hyderabad
+105,Vikas,31,80000,Operations,202,Chennai
+106,Iyer,37,95000,Sales,203,Mumbai
+107,Rohan,45,130000,Legal,204,Chennai
+108,Joshi,33,88000,Customer Support, Bangalore
+
+
