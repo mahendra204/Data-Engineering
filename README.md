@@ -1,5 +1,5 @@
 
-# Data-Engineering Interview Preparation Related Articles and Articles that helps you become a Data Engineer. 
+# Data-Engineering Interview Preparation Related Articles and Articles that help you become a Data Engineer. 
 
 Python coding questions for Data Engineer: https://medium.com/stackademic/python-coding-questions-for-data-engineer-interview-part-i-easy-lev-d52c3c6e01e6
 
@@ -20,4 +20,4 @@ SQL Interview Questions for Data Engineer Interview: https://blog.stackademic.co
 Support me with a coffee @==>: https://ko-fi.com/kamireddymahendra
 
 
-# Kindly give Star if you like this repository to encourage me to boost my energy to contribute more to the community. 
+# Hope you will give Star if you like this repository to encourage me to boost my energy to contribute more to the community. 
