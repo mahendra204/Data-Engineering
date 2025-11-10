@@ -1,0 +1,33 @@
+name: Sync Repositories
+
+on:
+  push:
+    branches:
+      - main
+      - divya  # Added your current branch
+  workflow_dispatch:  # Allows manual triggering
+
+jobs:
+  sync-repos:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout source repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  # Fetch all history
+
+      - name: Push to destination repository
+        env:
+          SOURCE_REPO: ${{ github.repository }}
+          DEST_REPO_TOKEN: ${{ secrets.DEST_REPO_TOKEN }}
+        run: |
+          # Configure git
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          
+          # Add the destination remote using token authentication
+          git remote add destination https://x-access-token:${DEST_REPO_TOKEN}@github.com/DESTINATION_USERNAME/DESTINATION_REPO.git
+          
+          # Push to destination
+          git push destination --all --force
+          git push destination --tags --force
