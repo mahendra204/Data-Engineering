@@ -1,0 +1,101 @@
+customer_id,name,dob,gender,city,join_date,status,email,phone_number,preferred_channel,occupation,income_range,risk_segment
+301,Sophie Johnson,2002-09-26,M,Liverpool,2024-09-14,Inactive,sophie.johnson301@example.com,+44 7732755712,Online,Sales,Low,Unknown
+302,Oscar Wright,1968-04-04,,Sheffield,2024-12-02,Active,oscar.wright302@example.com,+44 7683139025,ATM,Engineer,Medium,Medium
+303,Theo Smith,1964-10-07,M,Edinburgh,2024-10-16,Inactive,theo.smith303@example.com,+44 7429866639,Online,Engineer,Low,High
+304,Ava Smith,1975-02-24,M,London,2024-04-21,Inactive,ava.smith304@example.com,+44 7422780616,Onlne,Consultant,,Low
+305,Lily Evans,1991-10-21,,Cardiff,2024-10-23,Inactive,user@@example.com,+44 7999771775,Branch,Consultant,,Medium
+306,Thomas Brown,2005-12-16,F,Leeds,2024-06-28,Inactive,thomas.brown306@example.com,+44 7217274912,Branch,Teacher,High,
+307,Leo Wright,1982-12-12,M,SHEFFIELD,2024-09-25,Inactive,user@@example.com,+44 7687139594,ATM,Sales,High,Low
+308,Lily Cooper,1991-07-17,M,Edinburgh,2024-02-25,Inactive,lily.cooper308@example.com,+44 7868639589,Branch,Nurse,Very High,High
+309,Ella Watson,2003-08-15,M,Glasgow,2024-08-22,Inactive,ella.watson309@example.com,+44 7586410185,ATM,Sales,Medium,Low
+310,Jacob Roberts,1975-05-09,M,Glasgow,2025-12-21,Active,,+44 7988517065,Branch,Sales,High,Medium
+311,Lily Harris,1978-04-07,F,London,2024-08-01,Active,lily.harris311@example.com,+44 7853908958,Branch,Analyst,Low,Low
+312,Oliver Green,1974-03-08,F,Glasgow,2024-10-29,Inactive,oliver.green312@example.com,+44 7583297431,Branch,Sales,Low,High
+313, alfie robinson ,1976-05-27,M,Sheffield,2024-04-07,Active,alfie.robinson313@example.com,+44 7562040333,Branch,Designer,,Low
+314,Oliver King,1963-06-01,,Manchester,2024-06-18,Inactive,oliver.king314@example.com,+44 7542680157,Branch,Nurse,High,Medium
+315,Isla Lee,1970-05-01,F,London,2024-08-02,Inactive,isla.lee315@example.com,+44 7896535271,Branch,Developer,Medium,High
+316, henry jones,1996-10-11,,Birmingham,2024-12-08,Active,henry.jones316@example.com,,Branch,Teacher,Low,
+317,oscar wilson,1976-05-01,F,Manchester,2024-04-15,Active,oscar.wilson317@example.com,+44 7512062574,Online,,,High
+318,Henry Smith,1984-02-08,F,Edinburgh,2024-11-06,Active,henry.smith318@example.com,+44 7028250439,Online,Manager,Low,Low
+319,Harry Evans,1800-10-31,M,Bristol,2024-10-04,Inactive,harry.evans319@example.com,+44 7972597867,,Teacher,Low,High
+320,Jack Cooper,1971-12-22,F,Liverpool,2024-04-25,Active,jack.cooper320@example.com,+44 7764499375,Online,Nurse,Medium,High
+321,Emily Williams,1995-03-17,F,Cardiff,2026-01-07,Active,emily.williams321@example.com,+44 7210787882,,Self-Employed??,Medium,Medium
+322,Jack Baker,1984-11-28,F,Birmingham,2024-06-25,Inactive,jack.baker322@example.com,+44 7665676643,MOBILE,Engineer,Medium,Low
+323,Isla Williams,2004-03-07,M,London,2024-05-18,Inactive,isla.williams323@example.com,+44 7225238649,Branch,Student,High,Low
+324,Noah Harris,1966-07-01,F,London,2024-09-10,Inactive,noah.harris324@example.com,,Online,Manager,Low,
+325,Ava Thompson,1972-07-09,M,Manchester,2024-02-19,Inactive,ava.thompson325@example.com,+44 7677549274,MOBILE,Teacher,Low,Low
+326,Lily Wright,1997-11-29,M,Edinburgh,2024-12-10,Inactive,lily.wright326@example.com,+44 7837228569,Branch,Student,High,Medium
+327,Charlie Watson,1990-01-13,,Birmingham,2024-12-08,Pending,charlie.watson327@example.com,+44 7066361172,Online,Teacher,Very High,Medium
+328,Evie Hall,2099-05-03,F, BIRMINGHAM,2024-05-13,,noemail@.com,+44 7957731247,Branch,Analyst,High,Low
+329,George Cooper,1977-01-14,M,liverpool,2024-02-07,Inactive,george.cooper329@example.com,+44 7812278391,Branch,Consultant,Low,Medium
+330,Arthur Evans,1988-10-07,F,London,2024-05-06,Active,arthur.evans330@example.com,+44ABC12345,Branch,Teacher,Medium,High
+331,Henry Thomas,1997-09-26,F,Bristol,2024-02-28,,henry.thomas331@example.com,+44ABC12345,Branch,Nurse,,Low
+332,Ava Cooper,1969-11-29,,Leeds,2024-12-01,Active,ava.cooper332@example.com,+44 7868432839,Online,Teacher,Medium,High
+333,Oscar Lewis,1981-10-19,F,Liverpool,2024-05-17,Active,oscar.lewis333@example.com,+44 7534263865,,Analyst,Medium,Low
+334,Lily Davies,1994-04-12,F,liverpool,2026-03-29,Active,lily.davies334@example.com,+44 7639674278,Branch,Student,,Medium
+335,Henry White,1964-02-16,,Bristol,2026-09-24,inactive,henry.white335@example.com,+44 7648909270,Online,Designer,High,Medium
+336,Henry Walker,1990-10-25,F,CARDIFF,2024-02-19,,,+44 7489000613,ATM,Teacher,High,Medium
+337,Rosie Davies,1994-05-06,,Sheffield,2024-08-10,Inactive,rosie.davies337@example.com,+44 7970681141,Branch,Sales,High,
+338,Harry Harris,2004-12-25,X,Edinburgh,2024-08-04,Inactive,harry.harris338@example.com,+44 7528035948,,Designer,High,Low
+339,Evie Clark,2002-09-23,M,Bristol,2024-03-14,Inactive,evie.clark339@example.com,+44 7921711358,Branch,Engineer,High,High
+340,Jacob Evans,1960-07-27,F,Leeds,2024-02-10,Active,jacob.evans340@example.com,+44 7176489347,Online,Sales,Medium,High
+341,Jack Lewis,1972-07-17,M,EDINBURGH,2026-07-20,Active,jack.lewis341@example.com,+44 7341353342,,Developer,Low,Low
+342, Oliver Moore,2001-11-11,M,Liverpool,2024-10-11,Inactive,oliver.moore342@example.com,+44 7999447069,Branch,Designer,Low,Low
+343,Ava Walker,2002-12-24,F,Manchester,2024-08-16,Active,ava.walker343@example.com,+44 7552459661,Branch,Sales,Medium,
+344,George Jackson,1962-12-05,M,Edinburgh,2024-05-02,Active,george.jackson344@example.com,+44 7248626088,Branch,Nurse,Medium,
+345,Arthur Harris,1990-03-31,X,Sheffield,2024-04-30,Active,arthur.harris345@example.com,+44 7929792086,Online,Teacher,Medium,Medium
+346,Charlie Roberts,1989-04-11,M,Birmingham,2023-09-10,Active,charlie.roberts346@example.com,+44 7381235409,ATM,Teacher,High,Medium
+347,Theo Williams,1999-12-16,M,CARDIFF,2024-08-29,Active,theo.williams347@example.com,+44 7849399481,Online,,Medium,Medium
+348,Lily White,1982-06-08,F,Liverpool,2024-01-23,Inactive,lily.white348@example.com,+44 7990630473,,Nurse,Medium,High
+349,Poppy Wood,1980-11-13,M,Glasgow,2026-03-28,ACTIVE,poppy.wood349@example.com,+44ABC12345,ATM,Teacher,Medium,
+350,ella thompson,1974-11-22,M,Sheffield,2025-04-07,Inactive,,+44 7183916694,Online,Designer,Medium,Low
+351,Sophie Hall,1800-09-11,F,Bristol,2024-08-15,Inactive,sophie.hall351@example.com,+44 7287875214,Online,Developer,Medium,Medium
+352,Oscar Wilson,1976-09-30,F,Glasgow,2024-04-19,Active,oscar.wilson352@example.com,+44 7040793928,,Teacher,Very High,Low
+353,Rosie King,1992-04-03,M,Sheffield ,2024-07-22,Active,rosie.king353@example.com,07EcGDbcAA0,ATM,Manager,,Unknown
+354,Lily Cooper,1978-11-13,M,Bristol,2024-03-04,Inactive,lily.cooper354@example.com,+44 7449218323,ATM,Engineer,Low,Unknown
+355,Arthur Wilson,1986-11-07,F,Birmingham,2024-07-27,Active,arthur.wilson355@example.com,+44 7453183920,ATM,Sales,High,High
+356,Ella Wilson,1990-10-29,M,Liverpool,2026-02-04,Inactive,ella.wilson356@example.com,+44 7550154683,Branch,Developer,Low,High
+357,george green,1964-04-19,M,Glasgow,2024-01-13,Active,user@@example.com,+44 7121929930,ATM,Teacher,Low,Medium
+358,Jacob Thompson,1998-09-01,F,LIVERPOOL,2024-10-03,Active,jacob.thompson358@example.com,+44 7616003570,Branch,Nurse,High,High
+359,Oscar Jackson,2005-08-12,F,Birmingham,2024-08-10,Active,oscar.jackson359@example.com,+44 7779054913,,Nurse,High,
+360,ISABELLA JONES,1983-01-27,F,Glasgow,2024-01-27,Active,isabella.jones360@example.com,+44ABC12345,Branch,Engineer,Medium,Low
+361,Ava Thompson,1977-06-07,M,Manchester,2024-07-27,Active,ava.thompson361@example.com,+44 7226091430,Branch,Sales,High,Low
+362,George Harris,1972-07-30,M,Sheffield,2024-01-05,Inactive,george.harris362@example.com,+44ABC12345,MOBILE,Analyst,High,Medium
+363,Sophie Baker,2004-07-29,M, GLASGOW ,2024-06-25,Inactive,sophie.baker363@example.com,+44 7217830890,Online,Designer,Very High,Medium
+364,Thomas Lewis,1971-09-18,M,Cardiff,2024-02-29,Active,thomas.lewis364@example.com,+44 7627529688,Online,Consultant,Low,High
+365, AVA ROBERTS ,1971-12-12,M,Cardiff,2024-07-21,Active,ava.roberts365@example.com,+44 7623347870,Branch,Manager,High,Medium
+366,Emily Smith,1971-12-22,F,Leeds,2024-03-17,Inactive,emily.smith366@example.com,+44 7353883747,ATM,Developer,Low,High
+367,Evie Harris,1969-08-31,M,London,2023-07-17,Inactive,evie.harris367@example.com,+44 7116208032,ATM,Designer,High,Low
+368,Mia Wright,2099-01-14,F, GLASGOW,2024-08-01,Active,mia.wright368@example.com,+44 7811659985,ATM,Consultant,Medium,High
+369,Ella Thompson,1989-11-08,M,Bristol,2024-08-15,inactive,ella.thompson369@example.com,+44 7635934471,Onlne,Consultant,High,Low
+370,Henry Jackson,1997-10-20,F,Bristol,2024-04-16,Inactive,henry.jackson370@example.com,+44 7873182682,Onlne,Consultant,Low,Unknown
+371,Amelia White,2003-10-21,F,Manchester,2024-01-15,Inactive,amelia.white371@example.com,+44 7697661336,Branch,Analyst,Medium,Medium
+372,Freya Roberts,1962-11-06,F,Birmingham,2024-09-23,Inactive,freya.roberts372@example.com,+44 7253646253,Branch,Engineer,Medium,
+373,Ella Cooper,2005-08-01,F,Manchester,2026-01-10,Active,ella.cooper373@example.com,+44ABC12345,Branch,Manager,Medium,Medium
+374,George Green,1993-06-26,M,London,2024-08-25,Inactive,george.green374@example.com,+44 7075315478,Branch,Student,Low,High
+375,Freya Wilson,2005-02-10,M,LIVERPOOL,2024-10-20,Inactive,freya.wilson375@example.com,+44 7523306386,Online,Analyst,High,Medium
+376,Henry King,2002-10-02,F,manchester,2024-07-30,Inactive,henry.king376@example.com,+44 7261480476,Online,Teacher,Low,High
+377,Ella Roberts,1975-10-10,F,London,2024-07-21,,ella.roberts377@example.com,+44 7138631547,Branch,Teacher,Medium,Medium
+378,Leo Wilson,1983-09-20,M,Manchester,2024-01-05,Inactive,leo.wilson378@example.com,+44 7843910465,Online,Analyst,Low,Low
+379,Amelia Cooper,1977-03-19,M,Manchester,2024-03-05,Inactive,amelia.cooper379@example.com,+44 7332462275,ATM,Analyst,High,Low
+380,Amelia Moore,1961-11-27,M,Birmingham,2024-10-25,Inactive,amelia.moore380@example.com,+44 7556487892,ATM,Manager,Low,High
+381, SOPHIE ROBERTS ,1964-01-25,M,Leeds,2024-05-04,Inactive,,+44 7196622606,ATM,Sales,High,
+382,Mia Watson,1979-12-15,M,Birmingham,2024-12-04,Inactive,mia.watson382@example.com,+44 7948207435,ATM,Manager,High,High
+383,Emily Green,1961-01-25,M,Sheffield,2024-06-25,Inactive,noemail@.com,+44 7579131686,Branch,Teacher,Low,
+384,Emily Davies,1978-04-15,F,Bristol,2024-07-12,inactive,emily.davies384@example.com,,Branch,Engineer,Very High,Medium
+385,Isla Harris,1980-02-07,M,Glasgow,2024-05-15,Active,isla.harris385@example.com,+44 7243715817,Online,Developer,High,Medium
+386,Thomas Moore,1961-07-29,F,Glasgow,2024-06-04,Inactive,thomas.moore386@example.com,+44 7397426530,Online,Sales,Low,Low
+387,Charlie Smith,1981-02-24,F,Birmingham,2024-02-03,Active,charlie.smith387@example.com,+44 7670513831,ATM,Manager,Medium,Low
+388,Lily Baker,1964-08-11,F,Bristol,2024-07-25,Active,lily.baker388@example.com,+44 7068762591,Online,Sales,Very High,Unknown
+389,Isla Wood,1976-09-15,F,Bristol,2024-12-03,Inactive,isla.wood389@example.com,+44 7516303733,Online,Sales,High,Low
+390,Rosie Jones,1990-12-03,X,Edinburgh,2025-08-19,Inactive,rosie.jones390@example.com,+44 7457222332,Branch,Manager,,Medium
+391,Thomas Davies,1983-04-01,F,Leeds,2024-08-27,Active,thomas.davies391@example.com,+44 7893221975,Branch,Engineer,Medium,
+392,Jacob Evans,1976-02-15,X,Sheffield,2024-01-01,Pending,jacob.evans392@example.com,+44 7520437944,Online,Nurse,High,
+393,George Smith,2004-02-21,M,Birmingham,2024-07-21,Inactive,george.smith393@example.com,+44 7461255014,Online,Sales,Very High,Medium
+394,Alfie Johnson,2000-08-10,M,Cardiff,2024-01-09,Inactive,alfie.johnson394@example.com,+44 7516272647,,Analyst,Low,Low
+395,Isla Johnson,2003-02-27,M,bristol,2024-06-01,Active,isla.johnson395@example.com,+44 7474930783,ATM,Manager,,Low
+396,Oscar Lee,2099-09-28,F,Sheffield,2024-08-30,Inactive,oscar.lee396@example.com,+44 7064100349,Branch,Teacher,Medium,Medium
+397, Jacob Clark,1994-01-07,M,Manchester,2024-10-26,Active,jacob.clark397@example.com,+44 7715322132,ATM,Sales,Low,
+398,Muhammad Jackson,1971-04-30,F,London,2025-01-31,,muhammad.jackson398@example.com,+44ABC12345,,Manager,Medium,High
+399,Grace Johnson,1966-02-08,M, London ,2024-01-19,Inactive,user@@example.com,+44 7230016958,Branch,Manager,Medium,Medium
+400,Noah Wright,2004-07-02,,Sheffield,2026-12-20,Active,noah.wright400@example.com,+44 7466738414,,Designer,High,Low

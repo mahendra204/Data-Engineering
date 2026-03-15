@@ -1,0 +1,101 @@
+customer_id,name,dob,gender,city,join_date,status,email,phone_number,preferred_channel,occupation,income_range,risk_segment
+101, ruby harris,1999-05-06,M,Birmingham,2023-07-18,Inactive,ruby.harris101@example.com,+44 7951296211,Online,Consultant,Medium,High
+102,grace baker,2005-08-06,M,Cardiff,2023-04-27,Inactive,grace.baker102@example.com,+44 7037818052,ATM,Nurse,High,Low
+103,Charlie Johnson,1961-11-24,,Birmingham,2023-07-31,Active,charlie.johnson103@example.com,07lgoIfkhKl,Branch,Consultant,High,High
+104,Charlie White,1978-10-21,M,Sheffield,2023-09-07,Active,charlie.white104@example.com,+44 7396753759,Online,Sales,Low,High
+105,Amelia Davies,1986-12-28,F,Glasgow,2025-01-15,Inactive,amelia.davies105@example.com,+44 7338221195,Branch,,Low,Medium
+106,Theo Wilson,1982-02-01,M,Edinburgh,2023-09-26,Active,theo.wilson106@example.com,+44 7087947034,Branch,Manager,Medium,Medium
+107,Arthur Thomas,2004-04-30,M,Birmingham,2023-11-14,Active,arthur.thomas107@example.com,+44 7788435663,MOBILE,Manager,Low,Medium
+108,Thomas Davies,1976-12-24,F,Bristol,2023-07-22,Active,thomas.davies108@example.com,+44 7585126587,,Designer,High,High
+109,George Williams,1967-04-11,F,Manchester,2023-05-29,Active,george.williams109@example.com,+44 7595213691,Branch,Developer,Medium,Medium
+110,Theo Lewis,1981-12-05,F,Sheffield,2023-01-11,Inactive,theo.lewis110@example.com,+44 7155523996,Online,Nurse,Low,High
+111,Noah Robinson,1964-11-07,M,Glasgow,2023-06-09,Inactive,user@@example.com,+44 7430468539,Online,Developer,Low,Unknown
+112,Grace Evans,1980-03-05,F,Sheffield,2023-04-27,Active,grace.evans112@example.com,+44 7971176882,Online,Manager,Medium,Medium
+113,Lily King,1982-09-01,,Cardiff,2023-08-04,Inactive,lily.king113@example.com,+44 7640108465,Online,Nurse,High,Low
+114,Ruby Roberts,1991-08-10,,Manchester,2023-12-03,Inactive,ruby.roberts114@example.com,+44 7286536207,Online,,Very High,Low
+115, George Lee,1966-07-22,F,Birmingham,2023-04-11,inactive,george.lee115@example.com,+44 7819736579,ATM,Analyst,Medium,Low
+116,Oliver Hall,1998-10-26,M,Edinburgh,2023-07-11,Active,oliver.hall116@example.com,+44 7665015771,MOBILE,Sales,High,High
+117,Alfie Jackson,1967-05-20,F,Manchester,2023-01-04,Active,alfie.jackson117@example.com,+44 7254591990,Online,Consultant,Low,Unknown
+118,Oscar Lewis,1964-02-14,M,London,2023-06-09,Inactive,oscar.lewis118@example.com,+44 7372058487,Onlne,Teacher,Medium,Medium
+119,Isla Walker,2004-06-16,F,Liverpool,2023-01-15,Active,isla.walker119@example.com,+44 7134319971,,Manager,Medium,Medium
+120,Jack Brown,1999-02-03,F,Glasgow,2023-10-22,Active,jack.brown120@example.com,+44 7683890825,Branch,Sales,,
+121,Lily Smith,2099-12-12,F,Cardiff,2023-08-12,Inactive,lily.smith121@example.com,+44 7716623916,Online,Teacher,High,Medium
+122,Rosie Evans,1999-08-16,F,Sheffield,2023-07-02,Inactive,rosie.evans122@example.com,07xxxwetT8W,ATM,Student,Medium,Low
+123, MUHAMMAD TAYLOR ,1996-08-08,F,Edinburgh,2023-04-05,Active,muhammad.taylor123@example.com,+44 7763714689,MOBILE,Teacher,Low,Medium
+124,Noah Wright,1974-04-15,X,Manchester,2023-04-14,Active,noah.wright124@example.com,+44 7251184224,ATM,Nurse,High,Low
+125,evie roberts,2001-02-17,M,Birmingham,2023-09-19,Inactive,evie.roberts125@example.com,+44 7744260249,Branch,Student,Medium,Medium
+126,Leo Green,1999-11-06,M,Bristol,2023-09-27,inactive,leo.green126@example.com,+44 7334884770,Branch,,High,Low
+127,grace thomas,1960-10-22,M,Bristol,2023-07-16,,grace.thomas127@example.com,+44 7889143957,Branch,Designer,High,Low
+128,Theo Taylor,1969-10-08,F,Sheffield,2023-04-30,Active,theo.taylor128@example.com,,Online,Manager,High,High
+129, poppy baker ,1970-05-12,M,Glasgow,2023-12-20,Inactive,noemail@.com,+44 7110578951,Branch,Manager,Low,High
+130,Lily Johnson,1976-08-12,M,Leeds,2023-11-27,Inactive,lily.johnson130@example.com,+44 7183845198,ATM,Nurse,Medium,Medium
+131,George Johnson,1978-02-12,F,bristol,2023-01-26,Inactive,@example.com,+44ABC12345,Online,Consultant,Medium,Low
+132,Alfie Lewis,1975-03-26,F,Cardiff,2023-11-04,Active,alfie.lewis132@example.com,+44 7236836420,ATM,Analyst,Medium,Low
+133,Evie Wilson,1989-06-27,M,Sheffield,2023-02-15,Inactive,evie.wilson133@example.com,+44 7397493431,Branch,,Low,Medium
+134,Leo Green,1800-05-20,F,Cardiff,2023-06-06,Inactive,,+44 7910476776,Branch,Developer,Low,Low
+135,Harry Watson,1967-05-21,M,Edinburgh,2023-07-25,Active,harry.watson135@example.com,+44 7978312855,Online,Designer,Medium,High
+136,Isla Harris,1982-01-13,M,Leeds,2023-01-21,Active,isla.harris136@example.com,+44 7742961801,ATM,,Medium,Medium
+137,Charlie Jones,2003-10-24,M,Leeds,2023-05-22,Active,noemail@.com,+44 7287811950,Online,Teacher,High,Medium
+138,Mia Smith,1800-05-12,F,Manchester,2023-04-27,Inactive,@example.com,+44 7393872246,Branch,Sales,High,Medium
+139,Jacob White,2005-11-07,,Leeds,2023-05-19,Inactive,jacob.white139@example.com,,Branch,Nurse,High,Medium
+140,Muhammad Jones,1974-07-21,M,Cardiff,2023-09-24,Active,muhammad.jones140@example.com,+44 7821482348,Online,Nurse,Medium,Medium
+141,Poppy Roberts,2005-12-27,M,Leeds,2023-01-12,Inactive,poppy.roberts141@example.com,+44ABC12345,Branch,Manager,Medium,Medium
+142,Lily Evans,1967-02-26,F,Cardiff,2023-03-31,Active,noemail@.com,+44 7756606213,Onlne,Teacher,Low,High
+143,Ruby Walker,1975-03-01,F,Bristol,2023-11-09,Pending,ruby.walker143@example.com,+44 7478363306,Online,Developer,Low,Unknown
+144,Mia Baker,1800-11-18,F,Cardiff,2024-12-21,Inactive,mia.baker144@example.com,+44 7097398177,Online,Sales,High,Low
+145,George Taylor,1986-07-05,F,Edinburgh,2023-06-27,,george.taylor145@example.com,+44 7333208288,Branch,Teacher,High,High
+146,Evie White,1800-05-30,M,Edinburgh,2023-11-27,ACTIVE,noemail@.com,+44ABC12345,Branch,Developer,Low,High
+147,Poppy Wright,1800-07-30,F,Glasgow,2023-11-12,Inactive,poppy.wright147@example.com,+44 7064321667,Branch,Teacher,Medium,Low
+148,Grace King,1980-03-04,M,Leeds,2023-01-02,Active,grace.king148@example.com,+44 7514183812,Branch,,Medium,High
+149,amelia brown,1800-11-10,F,Sheffield,2023-03-25,Active,amelia.brown149@example.com,+44 7688251497,ATM,Designer,Low,Low
+150,AVA CLARK,1963-07-03,,Cardiff,2023-08-08,Inactive,ava.clark150@example.com,+44 7069681914,Online,Engineer,High,Low
+151,Evie Roberts,1983-05-31,F,London,2023-03-06,Active,evie.roberts151@example.com,+44 7157517775,ATM,Developer,Low,Low
+152,Lily Jones,1986-06-22,M,London,2023-10-05,Pending,lily.jones152@example.com,+44 7815811121,Branch,Nurse,Medium,Medium
+153,Rosie Harris,1800-11-18,M,Sheffield,2023-06-18,Inactive,rosie.harris153@example.com,+44 7646939722,Branch,,Low,High
+154,Evie Wilson,1800-03-10,M,Cardiff,2023-10-03,Inactive,noemail@.com,+44 7562711880,Online,Consultant,Low,High
+155,GRACE LEWIS,1994-06-19,F,Cardiff,2023-08-13,Inactive,grace.lewis155@example.com,+44 7844185000,Branch,Manager,Low,Medium
+156,Poppy Harris,1989-12-27,M,Sheffield,2023-04-01,Inactive,poppy.harris156@example.com,07U2gjgDfb2,Branch,Teacher,Medium,Medium
+157,Muhammad Roberts,1961-02-23,,Cardiff,2023-01-16,Inactive,muhammad.roberts157@example.com,+44 7317452363,Branch,Manager,High,Low
+158,Ella White,1964-12-14,X,Cardiff,2023-07-08,Active,ella.white158@example.com,+44 7959536515,Online,Manager,,Medium
+159,Rosie Wright,1996-12-31,F,Cardiff,2023-05-18,Inactive,rosie.wright159@example.com,+44 7571581360,Online,,Low,Low
+160,Amelia Roberts,1983-02-23,M,birmingham,2022-09-22,Active,amelia.roberts160@example.com,+44 7234690598,Onlne,Developer,Medium,High
+161,Henry Evans,1984-10-20,F,Edinburgh,2023-08-16,Active,henry.evans161@example.com,+44 7656389981,Branch,Engineer,Low,Low
+162,Lily Wood,2099-04-01,M,Leeds,2023-01-16,ACTIVE,lily.wood162@example.com,+44 7017457652,ATM,Sales,Low,High
+163,isabella walker,1969-08-24,M,Birmingham,2023-07-12,Inactive,isabella.walker163@example.com,+44 7455809432,Branch,Manager,Low,Low
+164,LEO THOMAS,1994-01-11,M,Glasgow,2022-09-29,Pending,leo.thomas164@example.com,+44 7768444261,Online,Engineer,High,Low
+165,Jack Clark,1990-07-04,M,leeds,2023-02-18,Active,jack.clark165@example.com,+44 7946676384,Branch,Developer,Low,Medium
+166,Muhammad Hall,1997-01-03,,Cardiff,2023-09-25,Active,muhammad.hall166@example.com,+44 7759775415,Branch,Manager,High,Low
+167, MIA TAYLOR,1973-12-18,M,Manchester,2023-01-26,Active,mia.taylor167@example.com,+44 7742475223,Online,Developer,,High
+168,Ruby Brown,1962-11-30,M,SHEFFIELD,2023-04-15,Inactive,ruby.brown168@example.com,+44 7833865572,Online,Sales,High,Medium
+169,Lily Hall,2004-06-24,F,Leeds,2023-03-22,Active,lily.hall169@example.com,+44 7089538586,Branch,,High,Medium
+170,Leo Jones,1988-09-21,F,Sheffield,2023-06-05,Inactive,leo.jones170@example.com,+44 7364086748,Branch,Nurse,Low,High
+171,Henry Thomas,1995-04-22,F,Birmingham,2023-04-12,Active,henry.thomas171@example.com,+44 7212879746,Online,Engineer,Medium,Low
+172,Poppy White,2001-02-27,M,Manchester,2023-09-05,Active,poppy.white172@example.com,+44 7057242892,ATM,Developer,High,
+173,theo jones,1966-03-09,F,Liverpool,2023-10-08,Active,theo.jones173@example.com,+44 7321837534,,Teacher,,Medium
+174,Alfie Roberts,1978-05-01,F,Birmingham,2023-02-26,Inactive,alfie.roberts174@example.com,,Branch,Student,Low,Low
+175,Poppy Wood,1978-12-27,,Manchester,2025-11-21,Active,poppy.wood175@example.com,+44 7652255309,Online,Designer,High,Low
+176,Oliver Brown,1973-06-01,,Birmingham,2023-02-14,Inactive,oliver.brown176@example.com,+44 7952607449,,Sales,Low,Medium
+177,Jacob Walker,2099-03-09,M,Liverpool,2023-02-28,Active,jacob.walker177@example.com,+44 7828334071,Branch,Engineer,Low,Unknown
+178,Rosie Baker,1985-04-13,M,Birmingham,2023-04-08,Inactive,user@@example.com,+44 7299918706,,Sales,High,Medium
+179,Freya Jones,1960-07-01,M,Birmingham,2023-12-02,Active,,+44 7856986097,Online,Engineer,Medium,Medium
+180,ISABELLA GREEN,2005-12-12,M,Bristol,2023-03-10,Inactive,isabella.green180@example.com,+44 7310625161,Online,Nurse,Medium,
+181,Lily Robinson,2099-01-09,M,Cardiff,2024-04-21,Active,lily.robinson181@example.com,+44 7460895094,Branch,Developer,Low,Low
+182,Arthur Hall,1963-06-16,M,London,2023-02-08,Inactive,arthur.hall182@example.com,+44 7162872174,Branch,,Medium,High
+183,Jack Hall,1970-04-14,M,Cardiff,2023-02-28,Inactive,jack.hall183@example.com,+44ABC12345,ATM,Nurse,Low,Low
+184,Evie Lee,2000-07-02,F,Manchester,2023-07-14,Active,evie.lee184@example.com,+44 7530581518,Online,Analyst,Medium,
+185,Ella Evans,2002-01-03,M,edinburgh,2023-08-11,Inactive,ella.evans185@example.com,+44 7141390034,ATM,Designer,High,Low
+186,Poppy White,1982-10-26,F,Glasgow,2023-10-23,Inactive,,+44 7710642621,,Designer,,High
+187,Oliver Lewis,1983-03-17,M,Bristol,2023-10-07,Active,oliver.lewis187@example.com,+44 7560963438,Branch,Nurse,Low,High
+188,Emily Wright,1976-12-26,F,Liverpool,2023-02-13,Active,emily.wright188@example.com,+44 7681406097,Branch,Engineer,High,Medium
+189,Lily Watson ,1976-05-25,F,Liverpool,2023-12-08,Active,lily.watson189@example.com,+44 7991904118,Online,Engineer,Low,Medium
+190,Isabella Davies,1972-01-16,F,Leeds,2023-05-16,Active,isabella.davies190@example.com,+44ABC12345,,,High,
+191,Emily Cooper,2004-04-21,M, LIVERPOOL,2023-12-17,Active,emily.cooper191@example.com,+44 7372867925,ATM,Designer,Medium,Unknown
+192, Emily Green,1981-11-16,M,Glasgow,2022-09-22,Active,emily.green192@example.com,+44 7456348425,Online,,Low,Low
+193,Poppy Hall,2099-02-23,F,Edinburgh,2023-12-11,Active,poppy.hall193@example.com,+44 7247925329,ATM,,Medium,Medium
+194,Grace Jackson,1985-03-20,M,Glasgow,2023-09-28,Active,grace.jackson194@example.com,+44 7259111721,Online,Teacher,High,
+195,Theo Lewis,1971-10-03,M,Manchester,2023-07-27,Active,theo.lewis195@example.com,+44 7361687321,ATM,Developer,High,High
+196,Theo Moore,1982-02-20,F,Glasgow,2023-02-22,Inactive,theo.moore196@example.com,+44 7210740925,Online,Sales,High,Medium
+197,Leo Wright,1975-09-17,M,Liverpool,2023-08-30,Inactive,leo.wright197@example.com,+44 7094220659,Branch,,Low,Medium
+198,Isla Wright,1989-07-14,M,london,2023-10-26,Inactive,isla.wright198@example.com,+44 7777997834,Online,Sales,Very High,Low
+199,Harry Lee,1972-04-24,X,Leeds,2023-10-11,Active,harry.lee199@example.com,+44 7559203587,ATM,Nurse,Low,High
+200,Poppy Clark,2099-02-06,F,MANCHESTER ,2023-04-21,,poppy.clark200@example.com,+44 7644386246,Online,Nurse,Low,
