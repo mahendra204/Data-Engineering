@@ -1,0 +1,86 @@
+*.pyc
+__pycache__/
+*.egg-info/
+.eggs/
+dist/
+build/
+.pytest_cache/
+.coverage
+htmlcov/
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+*.log
+logs/
+.env
+.env.local
+.venv
+venv/
+env/
+node_modules/
+.gradle/
+*.jar
+.databricks/
+.spark-warehouse/
+*.tmp
+.checkpoint/
+.delta-logs/
+_delta_log/
+_checkpoint/
+shuffle*/
+
+# Generated data files (keep CSV template but ignore generated data)
+data/*.csv
+
+# IDE and OS
+Thumbs.db
+.AppleDouble
+.LSOverride
+*.iml
+*.iws
+*.ipr
+*.sublime-workspace
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+.~*
+
+# Python
+*.whl
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Testing
+.tox/
+.hypothesis/
+*.egg-info
+.pytest_cache
+
+# Virtual environments
+.conda/
+.virtual/
+
+# Build outputs
+site/
+.eggs/
+
+# MacOS
+.AppleDS_Store
+.AppleDouble
+.LSOverride
+*.swp
+
+# JupyterLab
+.jupyterlab/
+.jupyter/
+
+# Local development
+local/
+temp/
+tmp/
+

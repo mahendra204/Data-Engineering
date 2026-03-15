@@ -1,0 +1,75 @@
+{
+  "name": "E-Commerce Data Pipeline",
+  "version": "1.0.0",
+  "description": "End-to-end declarative data pipeline using Databricks Delta Live Tables",
+  "author": "Data Engineering Team",
+  "license": "MIT",
+  "python_version": "3.8+",
+  "spark_version": "3.5.0",
+  "databricks_version": "latest",
+  "tags": [
+    "data-engineering",
+    "databricks",
+    "dlt",
+    "delta-live-tables",
+    "etl",
+    "data-pipeline",
+    "medallion-architecture"
+  ],
+  "components": {
+    "bronze_layer": {
+      "description": "Raw data ingestion",
+      "tables": [
+        "bronze_customers",
+        "bronze_products",
+        "bronze_orders"
+      ]
+    },
+    "silver_layer": {
+      "description": "Cleaned and validated data",
+      "tables": [
+        "silver_customers",
+        "silver_products",
+        "silver_orders"
+      ]
+    },
+    "gold_layer": {
+      "description": "Analytics and business metrics",
+      "tables": [
+        "gold_customer_orders",
+        "gold_product_sales",
+        "gold_order_metrics",
+        "gold_daily_sales",
+        "gold_category_performance"
+      ]
+    }
+  },
+  "datasets": {
+    "customers": {
+      "records": 10,
+      "columns": 8
+    },
+    "products": {
+      "records": 10,
+      "columns": 7
+    },
+    "orders": {
+      "records": 15,
+      "columns": 8
+    }
+  },
+  "features": [
+    "Declarative data transformations using DLT",
+    "Multi-layer medallion architecture",
+    "Data quality expectations and validations",
+    "Comprehensive analytics tables",
+    "Scalable design for production use",
+    "Complete sample e-commerce dataset",
+    "Unit testing framework",
+    "Production-ready notebooks"
+  ],
+  "deployment": {
+    "platforms": ["Databricks", "Azure Databricks", "AWS Databricks"],
+    "supported_runtimes": ["13.3 LTS", "13.2", "12.2"]
+  }
+}
