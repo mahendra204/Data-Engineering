@@ -13,7 +13,7 @@ This project demonstrates a complete end-to-end data engineering solution with:
 ✅ **Declarative Data Pipelines** using Databricks DLT  
 ✅ **Medallion Architecture** (Bronze/Silver/Gold layers)  
 ✅ **Data Quality Expectations** with built-in validation  
-✅ **Spark Lakehouse Implementation** for scalable processing  
+✅ **Spark Lakeflow Implementation** for scalable processing  
 ✅ **Comprehensive Data Models** for e-commerce scenarios  
 ✅ **Production-Ready Code** with error handling & monitoring  
 ✅ **Complete Sample Datasets** with realistic data  
@@ -59,7 +59,7 @@ declarative_datapipelines/
 │
 ├── src/                          # Core source code
 │   ├── dlt_pipeline.py          # 🔥 Main DLT pipeline (500+ lines)
-│   ├── spark_lakehouse_pipeline.py # Spark Lakehouse impl (550+ lines)
+│   ├── spark_lakeflow_pipeline.py # Spark Lakeflow impl (550+ lines)
 │   ├── sample_data_generator.py  # Realistic data generator
 │   ├── utils.py                 # Utilities & helpers
 │   ├── config.py                # Configuration management
@@ -222,13 +222,13 @@ customer_insights = spark.sql("""
 """)
 ```
 
-### Using Spark Lakehouse Pipeline
+### Using Spark Lakeflow Pipeline
 
 ```python
-from src.spark_lakehouse_pipeline import SparkLakehousePipeline
+from src.spark_lakeflow_pipeline import SparkLakeflowPipeline
 
 # Initialize pipeline
-pipeline = SparkLakehousePipeline(
+pipeline = SparkLakeflowPipeline(
     catalog="main",
     bronze_schema="bronze_ecommerce",
     silver_schema="silver_ecommerce",

@@ -1,6 +1,6 @@
 """
-Spark Lakehouse Data Pipeline Implementation
-Production-ready Spark pipeline without DLT using Delta Lake Lakehouse patterns
+Spark Lakeflow Data Pipeline Implementation
+Production-ready Spark pipeline without DLT using Delta Lake Lakeflow patterns
 Supports medallion architecture with streaming and batch processing
 """
 
@@ -27,9 +27,9 @@ logging.basicConfig(
 logger = logging.getLogger(__name__)
 
 
-class SparkLakehousePipeline:
+class SparkLakeflowPipeline:
     """
-    Production-grade Spark Lakehouse pipeline implementation.
+    Production-grade Spark Lakeflow pipeline implementation.
     Handles data ingestion, transformation, and aggregation.
     """
     
@@ -42,7 +42,7 @@ class SparkLakehousePipeline:
         data_path: str = "/dbfs/data"
     ):
         """
-        Initialize Spark Lakehouse Pipeline.
+        Initialize Spark Lakeflow Pipeline.
         
         Args:
             catalog: Delta Lake catalog name
@@ -52,7 +52,7 @@ class SparkLakehousePipeline:
             data_path: Base path for all data
         """
         self.spark = SparkSession.builder \
-            .appName("SparkLakehousePipeline") \
+            .appName("SparkLakeflowPipeline") \
             .config("spark.databricks.delta.schema.autoMigrate.enabled", "true") \
             .config("spark.sql.adaptive.enabled", "true") \
             .config("spark.sql.adaptive.skewJoin.enabled", "true") \
@@ -64,7 +64,7 @@ class SparkLakehousePipeline:
         self.gold_schema = gold_schema
         self.data_path = data_path
         
-        logger.info(f"Spark Lakehouse Pipeline initialized with {catalog}")
+        logger.info(f"Spark Lakeflow Pipeline initialized with {catalog}")
     
     # =========================================================================
     # SCHEMA DEFINITIONS
@@ -553,7 +553,7 @@ class SparkLakehousePipeline:
 def main():
     """Main entry point."""
     # Initialize pipeline
-    pipeline = SparkLakehousePipeline()
+    pipeline = SparkLakeflowPipeline()
     
     # Run full pipeline
     pipeline.run_full_pipeline()
