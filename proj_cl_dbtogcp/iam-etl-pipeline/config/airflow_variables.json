@@ -1,0 +1,10 @@
+{
+  "GCP_PROJECT_ID": "my-gcp-project",
+  "GCS_BUCKET": "iam-etl-bucket",
+  "BQ_DATASET": "iam_data",
+  "BQ_LOCATION": "US",
+  "POSTGRES_CONN_ID": "postgres_iam",
+  "ORACLE_CONN_ID": "oracle_iam",
+  "GCS_CONN_ID": "google_cloud_default",
+  "NOTIFICATION_EMAIL": "admin@example.com"
+}
