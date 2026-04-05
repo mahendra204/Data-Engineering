@@ -1,0 +1,107 @@
+version: "3.9"
+
+x-airflow-common: &airflow-common
+  image: apache/airflow:2.9.3-python3.11
+  environment: &airflow-common-env
+    AIRFLOW__CORE__EXECUTOR: LocalExecutor
+    AIRFLOW__CORE__SQL_ALCHEMY_CONN: postgresql+psycopg2://airflow:airflow@airflow-postgres/airflow
+    AIRFLOW__CORE__FERNET_KEY: ""
+    AIRFLOW__CORE__DAGS_ARE_PAUSED_AT_CREATION: "true"
+    AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    AIRFLOW__SCHEDULER__MIN_FILE_PROCESS_INTERVAL: "30"
+    AIRFLOW__WEBSERVER__SECRET_KEY: "iam-etl-secret-change-me"
+    # GCP auth via service account key (for local dev only)
+    GOOGLE_APPLICATION_CREDENTIALS: /opt/airflow/secrets/sa-key.json
+    # Override variables for local dev
+    GCP_PROJECT_ID: "my-gcp-project"
+    GCS_BUCKET: "iam-etl-bucket"
+    BQ_DATASET: "iam_data"
+    _PIP_ADDITIONAL_REQUIREMENTS: >-
+      apache-airflow-providers-google==10.19.0
+      apache-airflow-providers-postgres==5.11.1
+      apache-airflow-providers-oracle==3.10.0
+      pandas==2.2.2
+      pyarrow==16.1.0
+      cx_Oracle==8.3.0
+  volumes:
+    - ./dags:/opt/airflow/dags
+    - ./plugins:/opt/airflow/plugins
+    - ./config:/opt/airflow/config
+    - ./logs:/opt/airflow/logs
+    - ./secrets:/opt/airflow/secrets       # mount your sa-key.json here
+  depends_on:
+    airflow-postgres:
+      condition: service_healthy
+
+services:
+  # Airflow metadata DB
+  airflow-postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: airflow
+      POSTGRES_PASSWORD: airflow
+      POSTGRES_DB: airflow
+    volumes:
+      - airflow_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "airflow"]
+      interval: 5s
+      retries: 5
+    ports:
+      - "5433:5432"   # exposed on 5433 to avoid clash with your IAM postgres
+
+  # Sample PostgreSQL IAM DB (for local dev/testing)
+  iam-postgres:
+    image: postgres:15
+    environment:
+      POSTGRES_USER: iam_user
+      POSTGRES_PASSWORD: iam_password
+      POSTGRES_DB: iam_db
+    volumes:
+      - iam_postgres_data:/var/lib/postgresql/data
+      - ./scripts/seed_postgres.sql:/docker-entrypoint-initdb.d/01_seed.sql
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "iam_user", "-d", "iam_db"]
+      interval: 5s
+      retries: 5
+
+  airflow-init:
+    <<: *airflow-common
+    entrypoint: /bin/bash
+    command:
+      - -c
+      - |
+        airflow db migrate
+        airflow users create \
+          --username admin \
+          --firstname Admin \
+          --lastname User \
+          --role Admin \
+          --email admin@example.com \
+          --password admin
+        airflow variables import /opt/airflow/config/airflow_variables.json
+        echo "Airflow initialized ✅"
+    restart: on-failure
+
+  airflow-webserver:
+    <<: *airflow-common
+    command: webserver
+    ports:
+      - "8080:8080"
+    healthcheck:
+      test: ["CMD", "curl", "--fail", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+    restart: unless-stopped
+
+  airflow-scheduler:
+    <<: *airflow-common
+    command: scheduler
+    restart: unless-stopped
+
+volumes:
+  airflow_postgres_data:
+  iam_postgres_data:

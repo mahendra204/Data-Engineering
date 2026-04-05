@@ -1,0 +1,34 @@
+{
+  "lifecycle": {
+    "rule": [
+      {
+        "action": { "type": "SetStorageClass", "storageClass": "NEARLINE" },
+        "condition": {
+          "age": 30,
+          "matchesPrefix": ["raw/iam/"]
+        }
+      },
+      {
+        "action": { "type": "SetStorageClass", "storageClass": "COLDLINE" },
+        "condition": {
+          "age": 90,
+          "matchesPrefix": ["raw/iam/"]
+        }
+      },
+      {
+        "action": { "type": "Delete" },
+        "condition": {
+          "age": 365,
+          "matchesPrefix": ["raw/iam/"]
+        }
+      },
+      {
+        "action": { "type": "Delete" },
+        "condition": {
+          "age": 7,
+          "matchesPrefix": ["staged/iam/"]
+        }
+      }
+    ]
+  }
+}

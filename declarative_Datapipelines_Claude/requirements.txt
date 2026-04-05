@@ -1,0 +1,23 @@
+# requirements.txt — local dev / CI dependencies
+
+# Airflow + providers
+apache-airflow==2.7.3
+apache-airflow-providers-google>=10.0.0
+apache-airflow-providers-postgres>=5.0.0
+
+# PySpark (match Dataproc image version)
+pyspark==3.4.1
+
+# GCP clients
+google-cloud-bigquery>=3.0.0
+google-cloud-storage>=2.0.0
+google-cloud-dataproc>=5.0.0
+db-dtypes>=1.0.0
+
+# Testing
+pytest==7.4.3
+pytest-mock==3.11.1
+
+# Linting
+flake8==6.1.0
+black==23.9.1
