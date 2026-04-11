@@ -1,0 +1,63 @@
+1. Install the Spark Operator 
+The modern standard for running Spark on OpenShift is the Kubeflow Spark Operator. 
+Use Helm to install it in your cluster: 
+-------------------------Bash commands
+helm repo add spark-operator https://kubeflow.github.io/spark-operator
+helm install spark-operator spark-operator/spark-operator --namespace spark-operator --create-namespace
+------------------------------
+
+2. Prepare the Container Image
+You need a container image that includes Spark and Python (PySpark). 
+Base Images: You can build from the official Spark Dockerfiles or use community-provided images like those from radanalytics.io.
+Building Custom Images: If you need specific libraries, create a Dockerfile that installs your Python dependencies (e.g., pandas, numpy).
+----------------------------------------- Docker image
+FROM apache/spark-py:v3.4.0
+COPY my_script.py /opt/spark/work-dir/
+USER 1001
+--------------
+OpenShift Compatibility: Ensure the image uses a non-root user (e.g., UID 1001) to comply with OpenShift's security policies. 
+----------------------------------------
+3. Define the PySpark Application 
+Create a SparkApplication Custom Resource (YAML) to define your job. This tells the operator how to launch the driver and executors.
+
+-----------------------------
+apiVersion: "sparkoperator.k8s.io/v1beta2"
+kind: SparkApplication
+metadata:
+  name: pyspark-job
+  namespace: my-spark-jobs
+spec:
+  type: Python
+  pythonVersion: "3"
+  mode: cluster
+  image: "your-registry/spark-py:v3.4.0"
+  mainApplicationFile: "local:///opt/spark/work-dir/my_script.py"
+  sparkVersion: "3.4.0"
+  driver:
+    cores: 1
+    memory: "512m"
+    serviceAccount: spark-sa
+  executor:
+    cores: 1
+    instances: 2
+    memory: "512m"
+-------------------------------------------------
+Service Account: Ensure the spark-sa has permissions to create pods in the namespace
+-----------------------
+
+4. Create and Monitor the Job
+Apply the manifest using the OpenShift CLI (oc):
+Deploy: oc apply -f pyspark-job.yaml
+Status: Monitor the job status with oc get sparkapplication pyspark-job.
+Logs: View the driver output to see your results: oc logs -f pyspark-job-driver.
+
+--------------------------------------------------
+5. Advanced: OpenShift AI (Optional)
+For a more integrated data science experience, you can use Red Hat OpenShift AI (formerly Open Data Hub). 
+Red Hat Developer
+Red Hat Developer
+Workbenches: Launch Jupyter Notebooks directly on OpenShift.
+Integration: Use the Jupyter Enterprise Gateway to submit PySpark code from a notebook to a remote Spark cluster running on the same OpenShift platform.
+
+------------------------------------------------------
+
