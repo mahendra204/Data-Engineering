@@ -1,0 +1,65 @@
+version: '3.8'
+
+services:
+  spark-master:
+    image: apache/spark:3.5.1
+    container_name: spark-master
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.master.Master
+    ports:
+      - "7077:7077"
+      - "8080:8080"
+      - "4040:4040"
+    environment:
+      - SPARK_MASTER_HOST=spark-master
+      - SPARK_MASTER_PORT=7077
+      - SPARK_MASTER_WEBUI_PORT=8080
+      - SPARK_PUBLIC_DNS=localhost
+    volumes:
+      - ./app:/opt/spark-app
+      - ./data:/opt/spark-data
+    networks:
+      - spark-net
+
+  spark-worker:
+    image: apache/spark:3.5.1
+    container_name: spark-worker
+    depends_on:
+      - spark-master
+    command: /opt/spark/bin/spark-class org.apache.spark.deploy.worker.Worker spark://spark-master:7077
+    ports:
+      - "8081:8081"
+    environment:
+      - SPARK_WORKER_CORES=8
+      - SPARK_WORKER_MEMORY=8G
+      - SPARK_WORKER_WEBUI_PORT=8081
+      - SPARK_PUBLIC_DNS=localhost
+    volumes:
+      - ./app:/opt/spark-app
+      - ./data:/opt/spark-data
+    networks:
+      - spark-net
+
+  jupyter:
+    build: .
+    image: local-pyspark-351:latest
+    container_name: jupyter
+    depends_on:
+      - spark-master
+    ports:
+      - "8888:8888"
+      - "4041:4040"
+    environment:
+      - PYSPARK_MASTER=spark://spark-master:7077
+      - PYSPARK_PYTHON=python3
+      - SPARK_PUBLIC_DNS=localhost
+      - SPARK_UI_PORT=4040
+    volumes:
+      - ./notebooks:/opt/spark-notebooks
+      - ./data:/opt/spark-data
+      - ./app:/opt/spark-app
+    networks:
+      - spark-net
+
+networks:
+  spark-net:
+    driver: bridge
